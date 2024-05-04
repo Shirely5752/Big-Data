@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:minHeight="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/imageview_border"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPink"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/buttonPink"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pink"
+        android:backgroundTint="@color/holo_pink_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/buttonBlue"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/buttonBlue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/blue"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/buttonPink"
+        app:layout_constraintRight_toLeftOf="@+id/buttonGreen"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/buttonGreen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/green"
+        android:backgroundTint="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/buttonBlue"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:ignore="VisualLintButtonSize" />
+    <Button
+        android:id="@+id/buttonWhite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="White"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPink"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/buttonBlack"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:id="@+id/buttonBlack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Black"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPink"
+        app:layout_constraintLeft_toRightOf="@+id/buttonWhite"
+        app:layout_constraintRight_toLeftOf="@+id/buttonOrange"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:id="@+id/buttonOrange"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Orange"
+        android:backgroundTint="@color/holo_orange_dark"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPink"
+        app:layout_constraintLeft_toRightOf="@+id/buttonBlack"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/circle_button"
+        android:text="X"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/buttonGreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

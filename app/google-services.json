@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "121002068097",
+    "project_id": "sspu-thesis",
+    "storage_bucket": "sspu-thesis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121002068097:android:95b34eae94b7863e3f6580",
+        "android_client_info": {
+          "package_name": "com.sspu.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgTkkhdbAkxXFikRLdFxOFjISE4-29WUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
